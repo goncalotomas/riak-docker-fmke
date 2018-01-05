@@ -1,10 +1,10 @@
 # riak-docker-fmke
-This is a riak docker image for building the latest version of Riak (2.2.3). Based on Docker's documentation [page][1]
+This is a riak docker image for the latest version of Riak (2.2.3), adapted from [this page][1].
 
-## What it adds
-Before starting the container, this image makes sure that the "maps" bucket type is available.
+## Modifications to the original image
+This image enables both the `maps` and `sets` bucket types.
 
 ## What it does
-Each individual image of this spins a single Riak node. This will at least be useful in Travis-CI builds.
+Each image will start a single Riak node.
 
 [1]: https://docs.docker.com/engine/examples/running_riak_service/#creating-a-dockerfile
